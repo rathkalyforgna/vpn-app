@@ -7,7 +7,7 @@ export const COLORS = {
   font: '#000000',
 
   // base colors
-  primary: '#4630EB',
+  primary: '#0094FC',
   secondary: '#A3A1F7',
   tertiary: '#FFE358',
 
@@ -27,8 +27,8 @@ export const SIZES = {
   // global sizes
   base: 8,
   font: 16,
-  radius: 4,
-  padding: 24,
+  radius: 30, // 4,
+  padding: 26,
 
   // font sizes
   h1: 34,
@@ -62,9 +62,18 @@ export const WEIGHTS = {
   light: '300' as const,
 };
 
+export const SHADOW = {
+  elevation: 3,
+  shadowColor: COLORS.black,
+  shadowOffset: {width: 0, height: 3 - 1},
+  shadowOpacity: 0.1,
+  shadowRadius: 3,
+};
+
 export default {
   colors: COLORS,
   sizes: SIZES,
   fonts: FONTS,
   weights: WEIGHTS,
+  shadow: SHADOW,
 };
